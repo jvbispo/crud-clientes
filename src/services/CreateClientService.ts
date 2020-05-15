@@ -16,7 +16,6 @@ class UpdateAvatarService {
     dataDeNascimento,
   }: ICreateClient): Promise<Client> {
     const isUser = await this.clientRepository.findByEmail(email);
-    console.log(isUser);
     if (isUser) throw new Error('email already in use');
 
     const client = await this.clientRepository.create({
@@ -24,8 +23,6 @@ class UpdateAvatarService {
       email,
       dataDeNascimento,
     });
-    delete client.created_at;
-    delete client.updated_at;
 
     return client;
   }
