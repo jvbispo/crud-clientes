@@ -1,7 +1,7 @@
 {
-  "type": "postgres",
+  "type": "mysql",
   "host": "localhost",
-  "port": "5432",
+  "port": "3306",
   "username": "",
   "password": "",
   "database":"crud",
