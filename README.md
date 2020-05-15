@@ -56,10 +56,10 @@ A aplicação possui 5 rotas:
 - GET: /cliente/:id para mostrar um único cliente passando o id deste por routes params
     - requisição: `http://localhost:3333/cliente/1` <br/>
     - body: No body <br/>
-- DELETE: /cliente/:id para deletar uma publicação passando id desta por routes params
+- DELETE: /cliente/:id para deletar um clienteo passando id deste por routes params
   - requisição: `http://localhost:3333/cliente/1` <br/>
   - body: No body <br/>
-- PUT:/cliente/:id para atualizar dados de uma publicação específica passando as informações a serem atualizadas pelo body
+- PUT:/cliente/:id para atualizar dados de um cliente específico passando as informações a serem atualizadas pelo body
   - requisição: `http://localhost:3333/cliente/1`<br/>
   - body:
     ``
